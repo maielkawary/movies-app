@@ -1,0 +1,332 @@
+<html>
+  <head>
+    <title>Go MOvies</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,300;0,400;0,900;1,100;1,300;1,700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+	<div class="navbar">
+        
+            <div class="logo-container"><span class="big">Go</span> Movie</div>
+            <div class="menu-container">
+              <ul class="navbar-menu-items">
+                <li class="navbar-menu-item">Home</li>
+                <li class="navbar-menu-item">Movies</li>
+                <li class="navbar-menu-item">Series</li>
+                <li class="navbar-menu-item">Populer</li>
+                <li class="navbar-menu-item">Trends</li>
+              </ul>
+            </div>
+            <div class="profile-container">
+              <img id="profile" src="images/profilepicture.jfif" alt="">
+              <span class="profile-info">profile</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill arrow" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+              <div class="dark-mode">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                  <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16" style="padding-left: 1px;">
+                  <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                </svg>
+                <div class="ball"></div>
+              </div>
+            </div>
+        
+    </div>
+    <div class="sidebar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+        <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+        <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+        <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+        <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+      </svg>
+      
+    </div>
+    <div class="main-page">
+      <div class="cover-picture" style="width: calc(100%);
+      background: linear-gradient(#00000000 50%, #121212), url('images/tileburnedin.jfif'); 
+      background-repeat: no-repeat;
+      height: 400px;
+      background-size: 100% 100%;">
+        <p class="desc">Rambo is an American media franchise centered on a series of action films. There have been five films released so far in the series: First Blood, Rambo: First Blood Part II, Rambo III, Rambo and Rambo: Last</p>
+        <button class="watch">Watch</button>
+      </div>
+
+      
+    </div>
+    <h1 class="list-movies-title">New Release</h1>
+  <div class="list-movies" id="first">
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-arrow-right-circle arrow-list" viewBox="0 0 16 16" id="arrow1">
+      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+    </svg>
+  </div>
+  <h1 class="list-movies-title">New Release</h1>
+  <div class="list-movies">
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+  </div>
+  <div class="main-page">
+    <div class="cover-picture" style="width: calc(100%);
+    background: linear-gradient(#00000000 50%, #121212), url('images/title3.jpg'); 
+    background-repeat: no-repeat;
+    height: 400px;
+    background-size: 100% 100%;">
+      <p class="desc">Rambo is an American media franchise centered on a series of action films. There have been five films released so far in the series: First Blood, Rambo: First Blood Part II, Rambo III, Rambo and Rambo: Last</p>
+      <button class="watch">Watch</button>
+    </div>
+  <h1 class="list-movies-title">New Release</h1>
+  <div class="list-movies">
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+  </div>
+  <h1 class="list-movies-title">New Release</h1>
+  <div class="list-movies">
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+  </div>
+  <div class="main-page">
+    <div class="cover-picture" style="width: calc(100%);
+    background: linear-gradient(#00000000 50%, #121212), url('images/title1.jpg'); 
+    background-repeat: no-repeat;
+    height: 400px;
+    background-size: 100% 100%;">
+      <p class="desc">Rambo is an American media franchise centered on a series of action films. There have been five films released so far in the series: First Blood, Rambo: First Blood Part II, Rambo III, Rambo and Rambo: Last</p>
+      <button class="watch">Watch</button>
+    </div>
+  <h1 class="list-movies-title">New Release</h1>
+  <div class="list-movies">
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+  </div>
+  <h1 class="list-movies-title">New Release</h1>
+  <div class="list-movies">
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+    <div class="img-container">
+      <img src="images/poster_2x.jpg" alt="" class="img-item">
+      <h3 class="img-title">The Evil Next Door</h3>
+      <p class="img-desc">A dad moves into a new house with his son and girlfriend. When he's out of town working, the son makes a new "friend" next door. A dad moves into a new house with his son and girlfriend.</p>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+  </body>
+ </html>
